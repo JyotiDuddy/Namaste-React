@@ -1,3 +1,16 @@
+What I learned:
+
+Added React via CDN
+Created React elements using React.createElement()
+Rendered using ReactDOM.render()
+💡 Assignment:
+
+Recreate a Hello World app using 3 ways:
+
+Using HTML
+Using Vanilla JS
+Using React~
+
 // Theory 
 
 1.What is Emmet?
