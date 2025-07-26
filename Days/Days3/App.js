@@ -1,3 +1,4 @@
+
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 
@@ -8,3 +9,4 @@ const Parent= React.createElement("p",{},[
 ]);
 const root= ReactDOM.createRoot(document.getElementById("root"));
 root.render(Parent);
+ 
