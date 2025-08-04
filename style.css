@@ -9,70 +9,48 @@
     align-items: center;
 }
 .logo{
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  color:red;
-  font-weight:bolder
-
+  height: 54px;
+  width:108px;
+object-fit: contain;
+  
 }
-.big-z{
-     font-size:3rem;
-     font-weight: bolder;
-     
-}
-.small-text{
-   font-size:2rem;
-   font-weight: 600;
-}
-.nav-items{
+.nav-items ul{
     display: flex;
     gap:20px;
     list-style: none;
     font-size: 24px;
+    justify-content: center;
+    align-items: center;
+    
 }
-.cart{
-    font-size: 2rem;
-    font-weight: 700;
+.search{
+  padding: 10px;
+
 }
-/* Add to index.css or App.css */
-.restaurant-card {
-  border: 1px solid #ccc;
+.res-container{
+display: flex;
+   flex-wrap: wrap;
+   justify-content: space-around;
+   height:600px;
+   object-fit: contain;
+
+}
+.res-card{
+  width:200px;
+  height:400px;
+  border: 1px solid black;
   padding: 10px;
   margin: 10px;
-  width: 250px;
-  border-radius: 8px;
-  box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
-  display: flex;
-  flex-direction: column;
-}
-.restaurant-price-time{
-    display: flex;;
-    justify-content: space-between;
-    align-items: center;
-    gap:5px;
-    margin: 2px;
-}
-.restaurant-name{
-    text-decoration: underline;
-    margin: 2px;
-}
-.restaurant-rating{
-    display: inline-block;
-}
-.restaurant-cuisine{
-    margin: 2px;
-}
 
-.restaurant-img {
-  width: 100%;
-  height: 150px;
-  object-fit: cover;
-  border-radius: 6px;
+  
+
 }
-.restaurant-list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  padding:80px;
-  gap:30px;
-  margin: auto;
+.res-card:hover{
+  cursor:pointer;
+  border: 1px solid black
+}
+.res-logo{
+  width: 190px;
+
+  
 }

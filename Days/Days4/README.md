@@ -43,7 +43,7 @@ Ans. Yes, but it is not recommended in all. cases. you can use index when:
    b.The data is simple and static.
    c.You dont have a unique id available.
 
-11. Wahts are Props in React ? Ways to?
+11. Whats are Props in React ? Ways to?
 Ans. Props are the properties. They are used to pass data  from one component to another, usually from  parent to child.
 
   a. Read only-> Props cannnot be changed inside the child.

@@ -1,27 +1,4 @@
-import React from "react";
-import ReactDOM from "react-dom/client";
-
-const Header = () => {
-  return (
-    <div className="header">
-      <div className="logo-container">
-        <img
-          src="https://www.logodesign.net/logo/smoking-burger-with-lettuce-3624ld.png?nwm=1&nws=1&industry=food&sf=&txt_keyword=All"
-          className="logo"
-        />
-      </div>
-      <div className="nav-items">
-        <ul>
-          <li>Home</li>
-          <li>About</li>
-          <li>Contact Us</li>
-          <li>Cart</li>
-        </ul>
-      </div>
-    </div>
-  );
-};
-
+// import restaurantList from "../utilis/content";
 const resList = [
   {
     info: {
@@ -917,7 +894,7 @@ const resList = [
   },
 ];
 
-
+import RestaurantCard from "./RestaurantCard";
 
 const Body = () => {
   return (
@@ -931,38 +908,4 @@ const Body = () => {
     </div>
   );
 };
-
-
-
-
-
-  const RestaurantCard=(props)=>{
-    const{data}= props;
-    const{name,cuisines,costForTwo,avgRating,cloudinaryImageId}=data.info;
-    const{deliveryTime}= data.info.sla
-    return(
-        <div className="res-card" style={{background:"#f0f0f0f"}}>  
-        <img className="res-logo" src={"https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/"+cloudinaryImageId}/>
-           <h3>{name}</h3>
-           <h3>{costForTwo}</h3>
-           <h4>{cuisines.join(" , ")}</h4>
-           <h4>⭐️{avgRating}</h4>
-           <h4>{deliveryTime} min</h4>
-
-        </div>
-    )
-}
-export default RestaurantCard
-        
-
-const AppLayout = () => {
-  return (
-    <div className="app">
-      <Header />
-      <Body />
-    </div>
-  );
-};
-
-const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(<AppLayout />);
+export default Body;
