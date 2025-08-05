@@ -23,8 +23,14 @@ object-fit: contain;
     align-items: center;
     
 }
-.search{
+.filter{
   padding: 10px;
+
+}
+.filter-btn{
+  cursor: pointer;
+  border:2px solid black;
+  padding: 4px;
 
 }
 .res-container{
@@ -51,6 +57,7 @@ display: flex;
 }
 .res-logo{
   width: 190px;
+
 
   
 }
