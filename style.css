@@ -57,7 +57,21 @@ display: flex;
 }
 .res-logo{
   width: 190px;
+}
+.shimmer-container{
+  display: flex;
+  flex-wrap: wrap;
+}
+.shimmer-card{
+  margin: 20px;
+  width: 200px;
+  height:400px;
+  background-color: "f0f0f0";
 
+}
+.login{
+  padding: 0 20px;
+  cursor: pointer;
+  border-radius: 5px;
 
-  
 }

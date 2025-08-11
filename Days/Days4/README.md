@@ -53,3 +53,10 @@ Ans. Props are the properties. They are used to pass data  from one component to
  Ans. It is a user interface taht is built and configured using a declaration configuration files or data structure rather than being hardCoded.
 
  Config is the data coming from the api which keeps on changing according to different factors like user, location etc. 
+
+
+
+
+ 
+
+
