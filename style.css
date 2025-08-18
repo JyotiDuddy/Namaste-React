@@ -33,7 +33,7 @@ object-fit: contain;
   padding: 4px;
 
 }
-.res-container{
+.restaurantContainer{
 display: flex;
    flex-wrap: wrap;
    justify-content: space-around;

@@ -50,3 +50,7 @@ its lets you write asynchronous codecin a sychronous manner .
 11. What is the user of const json= await data.json()?
 Ans. data.json() is used to parse the JOSN  string returned by an apii into a javascript object so we can make with it directly in code.
 
+
+
+
+
