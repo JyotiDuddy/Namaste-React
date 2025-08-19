@@ -16,7 +16,7 @@ Ans. Microservices is an architectural style where a large application is built 
  3. Whart is the difference between Monolithic and Microservices?
  Ans. 1. In Monolithic , the entire application is built as a single and unified codebase, while in microservices , entire application is broken into smaller, independent services.
 
-    2. In Monolithic , one change requires redeploying the whole application, in microservices , each setvices can be redployes independently.
+    2. In Monolithic , one change requires redeploying the whole application, in microservices , each setvices can be redeloyes independently.
 
 
 4. Why do we need a useEffect hook?
@@ -44,7 +44,7 @@ Ans. CORS  is a browser security poilcy that restricts cross-origin HTTP request
 Ans. Async and await  make working with promises easier and more readable.
 async marks a funtiona as a asychronous - it will always return a promis. 
 await pause the execution inside an async function until the promise is resolved or rejected.
-its lets you write asynchronous codecin a sychronous manner .
+its lets you write asynchronous code in a sychronous manner .
 
 
 11. What is the user of const json= await data.json()?
