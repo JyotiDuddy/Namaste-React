@@ -3,6 +3,8 @@ import { LOGO_URL } from "../utils/constant";
 import { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
 import useOnlineStatus from "../utils/useOnlineStatus";
+import userContext from "../utils/userContext";
+import { useContext } from "react";
 
 const Header = () => {
   const [btnName, setBtnName] = useState(`Login`);
@@ -16,6 +18,8 @@ const Header = () => {
  const{onlineStatus} = useOnlineStatus();
  console.log(onlineStatus);
  
+
+ const {loggedInUser}= useContext(userContext)
    return (
     <div className="flex justfy-between items-center bg-pink-100  shadow-lg sm:bg-yellow-300">
       <div className="">
@@ -42,6 +46,7 @@ const Header = () => {
           >
             {btnName}
           </button>
+          <li className="px-4">{loggedInUser}</li>
         </ul>
       </div>
     </div>

@@ -1,15 +1,19 @@
 
 import { useState } from "react";
 import Shimmer from "./Shimmer";
-import RestaurantCard from "./RestaurantCard";
+import RestaurantCard  from "./RestaurantCard";
 import { Link } from "react-router-dom";
 import useRestaurant from "../utils/useRestaurant";
 
-const Body=()=>{
 
+const Body=()=>{
+   const[input,setInput] = useState("")
   const[searchText,setSearchText] = useState("");
     const{listOfRestaurant,filteredRestaurant,setFilteredRestaurant} = useRestaurant();
-  
+    console.log(
+      listOfRestaurant
+    )
+
   return listOfRestaurant.length === 0 ?(
     <Shimmer/>
   ):(<div className="container-body">
@@ -32,11 +36,19 @@ const Body=()=>{
             setFilteredRestaurant(filterLogic);
           }}>Top Restaurants</button>
       </div>
+      <div className="m-4 p-4 flex items-center">
+        <label>UserName</label>
+        
+          <input className="border border-black "  value={input} onChange={(e)=>setInput(e.target.value)}/>
+      </div>
       <div className="flex flex-wrap ">
       {filteredRestaurant.map((restaurant)=>(
        <Link
        key={restaurant.info.id}
-       to={"/restaurant/" + restaurant.info.id} ><RestaurantCard  data={restaurant}/></Link>
+       to={"/restaurant/" + restaurant.info.id} >
+        <RestaurantCard  data={restaurant}/>
+     
+        </Link>
       ))}
       </div>
   </div>
